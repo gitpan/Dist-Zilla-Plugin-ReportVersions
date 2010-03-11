@@ -1,0 +1,40 @@
+{
+   "resources" : {
+      "homepage" : "http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/",
+      "repository" : "http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions",
+      "bugtracker" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions"
+   },
+   "generated_by" : "Dist::Zilla version 1.100660",
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "version" : "1.100700",
+   "name" : "Dist-Zilla-Plugin-ReportVersions",
+   "author" : [
+      "Marcel Gruenauer <marcel@cpan.org>"
+   ],
+   "license" : "perl",
+   "build_requires" : {},
+   "provides" : {
+      "Dist::Zilla::Plugin::ReportVersions" : {
+         "version" : "1.100700",
+         "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm"
+      }
+   },
+   "requires" : {
+      "Scalar::Util" : "0",
+      "English" : "0",
+      "Carp" : "0",
+      "perl" : "5.008",
+      "Test::More" : "0",
+      "File::Find" : "0",
+      "File::Temp" : "0",
+      "Moose" : "0",
+      "Dist::Zilla::Plugin::InlineFiles" : "0"
+   },
+   "abstract" : "write a test that reports used module versions",
+   "configure_requires" : {
+      "ExtUtils::MakeMaker" : "6.11"
+   }
+}
