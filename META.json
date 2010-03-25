@@ -4,12 +4,12 @@
       "repository" : "http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions",
       "bugtracker" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions"
    },
-   "generated_by" : "Dist::Zilla version 1.100660",
+   "generated_by" : "Dist::Zilla version 1.100711",
    "meta-spec" : {
       "version" : 1.4,
       "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
    },
-   "version" : "1.100700",
+   "version" : "1.100840",
    "name" : "Dist-Zilla-Plugin-ReportVersions",
    "author" : [
       "Marcel Gruenauer <marcel@cpan.org>"
@@ -18,7 +18,7 @@
    "build_requires" : {},
    "provides" : {
       "Dist::Zilla::Plugin::ReportVersions" : {
-         "version" : "1.100700",
+         "version" : "1.100840",
          "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm"
       }
    },
@@ -27,7 +27,7 @@
       "English" : "0",
       "Carp" : "0",
       "perl" : "5.008",
-      "Test::More" : "0",
+      "Test::More" : "0.88",
       "File::Find" : "0",
       "File::Temp" : "0",
       "Moose" : "0",
@@ -38,3 +38,4 @@
       "ExtUtils::MakeMaker" : "6.11"
    }
 }
+

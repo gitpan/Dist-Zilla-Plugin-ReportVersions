@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
-our $VERSION = '1.100700';
+our $VERSION = '1.100840';
 # ABSTRACT: write a test that reports used module versions
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -23,7 +23,7 @@ Dist::Zilla::Plugin::ReportVersions - write a test that reports used module vers
 
 =head1 VERSION
 
-version 1.100700
+version 1.100840
 
 =head1 SYNOPSIS
 
@@ -86,7 +86,7 @@ ___[ t/000-report-versions.t ]___
 #!perl
 use warnings;
 use strict;
-use Test::More;
+use Test::More 0.88;
 
 # Include a cut-down version of YAML::Tiny so we don't introduce unnecessary
 # dependencies ourselves.
@@ -483,6 +483,7 @@ BEGIN {
     # Module::Install, or that mess with the test count, such as the Test::*
     # modules listed here.
     my %skip = map { $_ => 1 } qw(
+      App::FatPacker
       Module::Install
       Test::YAML::Meta
       Test::Pod::Coverage
@@ -504,8 +505,10 @@ BEGIN {
 
     diag("Testing with Perl $], $^X");
     for my $module (sort keys %requires) {
+        next if $skip{$module};
         use_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
+        $version = 'undefined' unless defined $version;
         diag("    $module version is $version");
     }
     done_testing;

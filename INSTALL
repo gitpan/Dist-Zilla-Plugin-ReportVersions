@@ -24,4 +24,4 @@ So you can do:
 
     % perldoc Dist::Zilla::Plugin::ReportVersions
 
-to read the documentation online with your favorite pager.
+to read the documentation with your favorite pager.

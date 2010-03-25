@@ -1,4 +1,11 @@
 Revision history for Perl extension Dist-Zilla-Plugin-ReportVersions
 
+1.100840  2010-03-25 11:50:31 Europe/Vienna
+    - removed weaver.ini since that's handled in Dist::Zilla's [@MARCEL] now
+    - catch undefined version numbers so there's no warning
+    - the generated test requires Test::More 0.88 for done_testing() to work
+      without a plan
+    - skip App::FatPacker
+
 1.100700  2010-03-11 15:44:30 Europe/Vienna
     - original version
