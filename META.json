@@ -9,7 +9,7 @@
       "version" : 1.4,
       "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
    },
-   "version" : "1.100840",
+   "version" : "1.100860",
    "name" : "Dist-Zilla-Plugin-ReportVersions",
    "author" : [
       "Marcel Gruenauer <marcel@cpan.org>"
@@ -18,7 +18,7 @@
    "build_requires" : {},
    "provides" : {
       "Dist::Zilla::Plugin::ReportVersions" : {
-         "version" : "1.100840",
+         "version" : "1.100860",
          "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm"
       }
    },

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
-our $VERSION = '1.100840';
+our $VERSION = '1.100860';
 # ABSTRACT: write a test that reports used module versions
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -23,7 +23,7 @@ Dist::Zilla::Plugin::ReportVersions - write a test that reports used module vers
 
 =head1 VERSION
 
-version 1.100840
+version 1.100860
 
 =head1 SYNOPSIS
 
@@ -507,6 +507,7 @@ BEGIN {
     for my $module (sort keys %requires) {
         next if $skip{$module};
         use_ok $module or BAIL_OUT("can't load $module");
+        local $SIG{__WARN__} = sub { note "$module: $_[0]" };
         my $version = $module->VERSION;
         $version = 'undefined' unless defined $version;
         diag("    $module version is $version");
