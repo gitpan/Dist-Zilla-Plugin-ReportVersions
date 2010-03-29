@@ -9,7 +9,7 @@
       "version" : 1.4,
       "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
    },
-   "version" : "1.100860",
+   "version" : "1.100880",
    "name" : "Dist-Zilla-Plugin-ReportVersions",
    "author" : [
       "Marcel Gruenauer <marcel@cpan.org>"
@@ -18,7 +18,7 @@
    "build_requires" : {},
    "provides" : {
       "Dist::Zilla::Plugin::ReportVersions" : {
-         "version" : "1.100860",
+         "version" : "1.100880",
          "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm"
       }
    },
@@ -33,7 +33,7 @@
       "Moose" : "0",
       "Dist::Zilla::Plugin::InlineFiles" : "0"
    },
-   "abstract" : "write a test that reports used module versions",
+   "abstract" : "Write a test that reports used module versions",
    "configure_requires" : {
       "ExtUtils::MakeMaker" : "6.11"
    }

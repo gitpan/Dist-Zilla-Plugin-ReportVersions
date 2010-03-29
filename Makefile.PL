@@ -19,9 +19,9 @@ my %WriteMakefileArgs = (
                                                },
                        'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
                        'BUILD_REQUIRES' => {},
-                       'ABSTRACT' => 'write a test that reports used module versions',
+                       'ABSTRACT' => 'Write a test that reports used module versions',
                        'EXE_FILES' => [],
-                       'VERSION' => '1.100860',
+                       'VERSION' => '1.100880',
                        'PREREQ_PM' => {
                                         'Scalar::Util' => '0',
                                         'English' => '0',

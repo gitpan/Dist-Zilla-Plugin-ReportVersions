@@ -1,5 +1,10 @@
 Revision history for Perl extension Dist-Zilla-Plugin-ReportVersions
 
+1.100880  2010-03-29 20:55:49 Europe/Vienna
+    - moved the warn catcher to before using the candidate module
+    - when skipping a module, make a note about it
+    - skip Moose::Role (conflicts with Moose)
+
 1.100860  2010-03-27 11:07:16 Europe/Vienna
     - made the generated test more robust by catching and noting warnings.
       HTML::Table's illegal version string '2.08a' caused problems.
