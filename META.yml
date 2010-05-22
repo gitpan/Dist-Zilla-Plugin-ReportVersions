@@ -20,7 +20,7 @@ name: Dist-Zilla-Plugin-ReportVersions
 provides:
   Dist::Zilla::Plugin::ReportVersions:
     file: lib/Dist/Zilla/Plugin/ReportVersions.pm
-    version: 1.101420
+    version: 1.101421
 recommends: {}
 requires:
   Dist::Zilla::Plugin::InlineFiles: 0
@@ -29,5 +29,5 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/
-  repository: origin
-version: 1.101420
+  repository: http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions
+version: 1.101421

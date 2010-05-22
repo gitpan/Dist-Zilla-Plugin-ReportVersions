@@ -4,7 +4,7 @@ use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
 BEGIN {
-  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.101420';
+  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.101421';
 }
 # ABSTRACT: Write a test that reports used module versions
 use Moose;
@@ -25,7 +25,7 @@ Dist::Zilla::Plugin::ReportVersions - Write a test that reports used module vers
 
 =head1 VERSION
 
-version 1.101420
+version 1.101421
 
 =head1 SYNOPSIS
 

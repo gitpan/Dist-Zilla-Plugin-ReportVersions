@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
                                            },
                        'ABSTRACT' => 'Write a test that reports used module versions',
                        'EXE_FILES' => [],
-                       'VERSION' => '1.101420',
+                       'VERSION' => '1.101421',
                        'PREREQ_PM' => {
                                         'Dist::Zilla::Plugin::InlineFiles' => '0',
                                         'Moose' => '0'
