@@ -1,6 +1,10 @@
 Revision history for Perl extension Dist-Zilla-Plugin-ReportVersions
 
-1.100880  2010-03-29 20:55:49 Europe/Vienna
+1.101420  2010-05-22 17:42:24 Europe/Vienna
+    - require Test::More 0.94
+    - skip Test::Kwalitee
+
+1.100880  2010-03-29 21:18:55 Europe/Vienna
     - moved the warn catcher to before using the candidate module
     - when skipping a module, make a note about it
     - skip Moose::Role (conflicts with Moose)
