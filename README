@@ -3,7 +3,7 @@ NAME
     module versions
 
 VERSION
-    version 1.101460
+    version 1.101600
 
 SYNOPSIS
     In "dist.ini":
@@ -27,8 +27,7 @@ BUGS AND LIMITATIONS
     No bugs have been reported.
 
     Please report any bugs or feature requests through the web interface at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Repo
-    rtVersions>.
+    <http://rt.cpan.org>.
 
 AVAILABILITY
     The latest version of this module is available from the Comprehensive

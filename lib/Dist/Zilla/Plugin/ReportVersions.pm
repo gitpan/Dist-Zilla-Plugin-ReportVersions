@@ -4,7 +4,7 @@ use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
 BEGIN {
-  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.101460';
+  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.101600';
 }
 # ABSTRACT: Write a test that reports used module versions
 use Moose;
@@ -25,7 +25,7 @@ Dist::Zilla::Plugin::ReportVersions - Write a test that reports used module vers
 
 =head1 VERSION
 
-version 1.101460
+version 1.101600
 
 =head1 SYNOPSIS
 
@@ -55,7 +55,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
@@ -496,6 +496,7 @@ BEGIN {
       Devel::Cover
       Module::Install
       Moose::Role
+      POE::Loop::Tk
       Template::Test
       Test::Kwalitee
       Test::Pod::Coverage
