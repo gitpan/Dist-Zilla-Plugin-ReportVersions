@@ -40,7 +40,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ReportVersions" : {
          "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm",
-         "version" : "1.101600"
+         "version" : "1.101700"
       }
    },
    "release_status" : "stable",
@@ -54,6 +54,6 @@
          "url" : "http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions"
       }
    },
-   "version" : "1.101600"
+   "version" : "1.101700"
 }
 
