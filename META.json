@@ -4,7 +4,7 @@
       "Marcel Gruenauer <marcel@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101582, CPAN::Meta::Converter version 2.101591",
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
    "license" : [
       "perl_5"
    ],
@@ -40,7 +40,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::ReportVersions" : {
          "file" : "lib/Dist/Zilla/Plugin/ReportVersions.pm",
-         "version" : "1.101700"
+         "version" : "1.102460"
       }
    },
    "release_status" : "stable",
@@ -54,6 +54,6 @@
          "url" : "http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions"
       }
    },
-   "version" : "1.101700"
+   "version" : "1.102460"
 }
 

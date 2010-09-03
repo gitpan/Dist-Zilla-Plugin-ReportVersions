@@ -3,7 +3,7 @@ NAME
     module versions
 
 VERSION
-    version 1.101700
+    version 1.102460
 
 SYNOPSIS
     In "dist.ini":
@@ -36,12 +36,14 @@ AVAILABILITY
     <http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/>.
 
     The development version lives at
-    <http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions/>. Instead
-    of sending patches, please fork this project using the standard git and
+    <http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions> and may be
+    cloned from
+    <git://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions>. Instead of
+    sending patches, please fork this project using the standard git and
     github infrastructure.
 
 AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+    Marcel Gruenauer <marcel@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2010 by Marcel Gruenauer.

@@ -4,7 +4,7 @@ use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
 BEGIN {
-  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.101700';
+  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.102460';
 }
 # ABSTRACT: Write a test that reports used module versions
 use Moose;
@@ -25,7 +25,7 @@ Dist::Zilla::Plugin::ReportVersions - Write a test that reports used module vers
 
 =head1 VERSION
 
-version 1.101700
+version 1.102460
 
 =head1 SYNOPSIS
 
@@ -61,17 +61,16 @@ L<http://rt.cpan.org>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/>.
+site near you, or see L<http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/>.
 
-The development version lives at
-L<http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
+The development version lives at L<http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions>
+and may be cloned from L<git://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
 
 =head1 AUTHOR
 
-  Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -524,7 +523,7 @@ BEGIN {
             next;
         }
         local $SIG{__WARN__} = sub { note "$module: $_[0]" };
-        use_ok $module or BAIL_OUT("can't load $module");
+        require_ok $module or BAIL_OUT("can't load $module");
         my $version = $module->VERSION;
         $version = 'undefined' unless defined $version;
         diag("    $module version is $version");
