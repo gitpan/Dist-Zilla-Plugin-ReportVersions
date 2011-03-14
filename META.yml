@@ -12,7 +12,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670'
+generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,7 +21,7 @@ name: Dist-Zilla-Plugin-ReportVersions
 provides:
   Dist::Zilla::Plugin::ReportVersions:
     file: lib/Dist/Zilla/Plugin/ReportVersions.pm
-    version: 1.102460
+    version: 1.110730
 requires:
   Dist::Zilla::Plugin::InlineFiles: 0
   Moose: 0
@@ -29,5 +29,5 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/
-  repository: http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions
-version: 1.102460
+  repository: git://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions.git
+version: 1.110730

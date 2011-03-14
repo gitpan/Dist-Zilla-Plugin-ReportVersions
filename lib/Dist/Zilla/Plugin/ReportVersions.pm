@@ -4,7 +4,7 @@ use warnings;
 
 package Dist::Zilla::Plugin::ReportVersions;
 BEGIN {
-  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.102460';
+  $Dist::Zilla::Plugin::ReportVersions::VERSION = '1.110730';
 }
 # ABSTRACT: Write a test that reports used module versions
 use Moose;
@@ -19,13 +19,16 @@ no Moose;
 
 =pod
 
+=for test_synopsis 1;
+__END__
+
 =head1 NAME
 
 Dist::Zilla::Plugin::ReportVersions - Write a test that reports used module versions
 
 =head1 VERSION
 
-version 1.102460
+version 1.110730
 
 =head1 SYNOPSIS
 
@@ -43,9 +46,6 @@ following file:
 The C<000> prefix is chosen so it runs first to make sure it shows up in CPAN
 tester reports.
 
-=for test_synopsis 1;
-__END__
-
 =head1 INSTALLATION
 
 See perlmodinstall for information and options on installing Perl modules.
@@ -55,7 +55,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-ReportVersions>.
 
 =head1 AVAILABILITY
 
@@ -64,7 +64,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/Dist-Zilla-Plugin-ReportVersions/>.
 
 The development version lives at L<http://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions>
-and may be cloned from L<git://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions>.
+and may be cloned from L<git://github.com/hanekomu/Dist-Zilla-Plugin-ReportVersions.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
@@ -501,6 +501,7 @@ BEGIN {
       Test::Pod::Coverage
       Test::Portability::Files
       Test::YAML::Meta
+      open
     );
 
     my $Test = Test::Builder->new;

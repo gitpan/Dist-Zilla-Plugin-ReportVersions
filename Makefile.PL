@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     'Dist::Zilla::Plugin::InlineFiles' => '0',
     'Moose' => '0'
   },
-  'VERSION' => '1.102460',
+  'VERSION' => '1.110730',
   'test' => {
     'TESTS' => 't/*.t'
   }
